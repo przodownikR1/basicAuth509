@@ -123,3 +123,5 @@ certificate.crt         keystore.p12      static/      tomcat-ssl.truststore
 =====================
  $ curl "https://$username:$password@myhost/resource"
  curl -k --cert  przodownik.pem:password https://localhost:9123/api/hello
+ 
+ openssl req -x509 -sha256 -newkey rsa:2048 -keyout key.pem -out cert.pem -days XXX
